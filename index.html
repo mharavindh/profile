@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Profile</title>
+        <link rel="stylesheet" href="style.css" />
+        <!--<script src="myscripts.js"></script>-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="main center">
+            <div class="box center">
+              <img src="IMG_20191027_075606_810.jpg" alt="H A" />
+              <div>
+                <p class="user_name">HARISH ARAVINDH</p>
+                <p class="skill">Budding Developer</p>
+              </div>
+              <div class="arr_container center">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+              <div class="left_container off">
+                <p>Skills</p>
+                <div class="skills">
+                  <div>ASP.NET</div>
+                  <div>Java, Python, C#</div>
+                  <div>Web Development(HTML, CSS, JS, React)</div>
+                  <div>RDBMS</div>
+                </div>
+                <div class="icons">
+                  <a href="mailto:harisharavindhm@gmail.com"><i class="fa fa-envelope" style="color: greenyellow;"></i></a>
+                  <a href="https://github.com/mharavindh"><i class="fa fa-github" style="color: greenyellow;"></i></a>
+                  <a href="https://www.linkedin.com/in/harish-aravindh-331288129"><i class="fa fa-linkedin" style="color: greenyellow;"></i></a>
+                  <a href="https://twitter.com/harish_aravindh"><i class="fa fa-twitter" style="color: greenyellow;"></i></a>
+                  <a href="https://www.facebook.com/people/Harish-Aravindh-M-R/100010710995502/"><i class="fa fa-facebook" style="color: greenyellow;"></i></a>
+                </div>
+                <div class="cancel center">
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+                const clc = document.querySelector(".cancel");
+                const arr = document.querySelector(".arr_container");
+                const left_container = document.querySelector(".left_container");
+                arr.addEventListener("click", () => {
+                arr.classList.add("active_arr");
+                    if (left_container.classList.contains("off")) {
+                        left_container.classList.remove("off");
+                        left_container.classList.add("active");
+                    }
+                });
+                clc.addEventListener("click", () => {
+                arr.classList.remove("active_arr");
+                    if (left_container.classList.contains("active")) {
+                        left_container.classList.remove("active");
+                        left_container.classList.add("off");
+                    }
+                });
+          </script>
+    </body>
+</html>
