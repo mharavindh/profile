@@ -17,8 +17,8 @@ body {
   height: 100vh;
 }
 .box {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
   border-radius: 23px;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
 }
 .user_name {
   margin-bottom: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .skill {
   font-size: 0.8em;
